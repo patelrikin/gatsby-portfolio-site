@@ -1,16 +1,15 @@
 module.exports = {
-  pathPrefix: '/',
   siteMetadata: {
-    siteUrl: 'https://gatsby.patelrikin.com',
-    author: 'Rikin Patel',
-    title: 'Rikin\'s Gatsby Portfolio Project',
-    description: 'My Gatsby portfolio project ...',
+    siteUrl: "https://gatsby.patelrikin.com",
+    author: "Rikin Patel",
+    title: "Rikin's Gatsby Portfolio Project",
+    description: "My Gatsby portfolio project ...",
     keywords: [
-      'UI Lead',
-      'Software Engineer',
-      'Web Developer',
-      'Consultant',
-      'Resource Manager'
+      "UI Lead",
+      "Software Engineer",
+      "Web Developer",
+      "Consultant",
+      "Resource Manager",
     ],
   },
   plugins: [
