@@ -9,8 +9,18 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Link from "./link"
 import Header from "./header"
 import "./layout.css"
+
+const NAVIGATION = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/techskills", label: "TechSkills" },
+  { to: "/workexperience", label: "WorkExperience" },
+  { to: "/portfolio", label: "Portfolio" },
+  { to: "/contact", label: "Contact" },
+]
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,6 +44,13 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
+        <ul>
+          {NAVIGATION.map(navigation => (
+            <li key={navigation.label}>
+              <Link to={navigation.to}>{navigation.label}</Link>
+            </li>
+          ))}
+        </ul>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
