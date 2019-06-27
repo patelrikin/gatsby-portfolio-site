@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/patelrikin/gatsby-portfolio-site.svg?branch=master)](https://travis-ci.org/patelrikin/gatsby-portfolio-site)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9304995b-9d96-4fdd-8891-c2442dd95a43/deploy-status)](https://app.netlify.com/sites/gatsby-patelrikin/deploys)
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
