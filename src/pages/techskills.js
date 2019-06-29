@@ -8,8 +8,7 @@ export default function TechSkills() {
   return (
     <Layout>
       <SEO title="Technical Skills" />
-      TechSkills
-      <Link to="/">Go back to the homepage</Link>
+      TechSkills <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }

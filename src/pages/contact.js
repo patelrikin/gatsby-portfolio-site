@@ -8,8 +8,7 @@ export default function Contact() {
   return (
     <Layout>
       <SEO title="Contact" />
-      Contact
-      <Link to="/">Go back to the homepage</Link>
+      Contact <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }
