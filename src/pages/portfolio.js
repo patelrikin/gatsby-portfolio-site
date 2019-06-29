@@ -8,8 +8,7 @@ export default function Portfolio() {
   return (
     <Layout>
       <SEO title="Portfolio" />
-      Portfolio
-      <Link to="/">Go back to the homepage</Link>
+      Portfolio <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }

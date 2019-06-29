@@ -8,8 +8,7 @@ export default function WorkExperience() {
   return (
     <Layout>
       <SEO title="Work Experience" />
-      WorkExperience
-      <Link to="/">Go back to the homepage</Link>
+      WorkExperience <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }

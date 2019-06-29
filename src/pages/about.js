@@ -8,8 +8,7 @@ export default function About() {
   return (
     <Layout>
       <SEO title="About" />
-      About
-      <Link to="/">Go back to the homepage</Link>
+      About <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }
