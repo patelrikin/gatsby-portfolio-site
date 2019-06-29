@@ -23,7 +23,7 @@ const NAVIGATION = [
   { to: "/contact", label: "Contact" },
 ]
 
-const contentBackgroundStyle = { background: "rgba(255, 255, 255, 0.3)" }
+const contentBackgroundStyle = { background: "rgba(255, 255, 255, 0.5)" }
 const contentStyle = {
   margin: `0 auto`,
   maxWidth: 960,
