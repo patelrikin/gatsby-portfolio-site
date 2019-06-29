@@ -43,13 +43,13 @@ module.exports = {
       options: {
         trackingId: "UA-49492242-5",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
+        head: false,
         // Setting this parameter is optional
-        anonymize: true,
+        // anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: true,
+        // respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Enables Google Optimize using your container Id
         // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
         // Enables Google Optimize Experiment ID
@@ -57,8 +57,8 @@ module.exports = {
         // Set Variation ID. 0 for original 1,2,3....
         variationId: "0",
         // Any additional create only fields (optional)
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
+        // sampleRate: 5,
+        // siteSpeedSampleRate: 10,
         cookieDomain: "patelrikin.com",
       },
     },
@@ -68,8 +68,8 @@ module.exports = {
         dsn: "https://40e104b3c3c24a84bca8ba1e4ac64ef2@sentry.io/1493145",
         // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
         environment: process.env.NODE_ENV,
-        enabled: (() =>
-          ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)(),
+        // enabled: (() =>
+        //   ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
   ],
