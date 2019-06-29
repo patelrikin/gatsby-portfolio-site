@@ -23,6 +23,14 @@ const NAVIGATION = [
   { to: "/contact", label: "Contact" },
 ]
 
+const contentBackgroundStyle = { background: "rgba(255, 255, 255, 0.3)" }
+const contentStyle = {
+  margin: `0 auto`,
+  maxWidth: 960,
+  padding: `0px 1.0875rem 1.45rem`,
+  paddingTop: 0,
+}
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -37,28 +45,23 @@ const Layout = ({ children }) => {
   return (
     <>
       <StyledBackgroundSection>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <ul>
-            {NAVIGATION.map(navigation => (
-              <li key={navigation.label}>
-                <Link to={navigation.to}>{navigation.label}</Link>
-              </li>
-            ))}
-          </ul>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+        <div style={contentBackgroundStyle}>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div style={contentStyle}>
+            <ul>
+              {NAVIGATION.map(navigation => (
+                <li key={navigation.label}>
+                  <Link to={navigation.to}>{navigation.label}</Link>
+                </li>
+              ))}
+            </ul>
+            <main>{children}</main>
+            <footer>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
+            </footer>
+          </div>
         </div>
       </StyledBackgroundSection>
     </>
