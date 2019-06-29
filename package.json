@@ -24,8 +24,6 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "gatsby-cli": "^2.7.7",
-    "lighthousebot": "https://github.com/GoogleChromeLabs/lighthousebot",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -38,8 +36,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "lh": "lighthousebot"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
