@@ -7,3 +7,4 @@
 [context.deploy-preview]
   publish = "public/"
   command = "npm run build && npm run lh -- ${DEPLOY_PRIME_URL}"
+
