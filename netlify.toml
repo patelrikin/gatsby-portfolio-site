@@ -1,8 +1,8 @@
+[context.deploy-preview]
+  command = "npm run lh -- ${DEPLOY_PRIME_URL}"
 [build]
   publish = "public"
   command = "npm run build"
 [build.environment]
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
-[context.deploy-preview]
-  command = "npm run lh -- "${DEPLOY_PRIME_URL}
