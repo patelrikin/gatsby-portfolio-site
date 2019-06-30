@@ -6,4 +6,5 @@
   YARN_FLAGS = "--no-ignore-optional"
 [context.deploy-preview]
   publish = "public/"
+  TRAVIS_PULL_REQUEST_SLUG = DEPLOY_PRIME_URL
   command = "npm run build && npm run lh -- ${DEPLOY_PRIME_URL}"
