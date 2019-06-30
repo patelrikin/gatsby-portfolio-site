@@ -9,3 +9,5 @@ install:
 script:
   - yarn test
   - yarn build
+after_success:
+  - npm run lh -- https://staging.gatsby.patelrikin.com
