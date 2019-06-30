@@ -6,5 +6,4 @@
   YARN_FLAGS = "--no-ignore-optional"
 [context.deploy-preview]
   publish = "public/"
-  command = "npm run build"
-  command = "npm run lh -- ${DEPLOY_PRIME_URL}"
+  command = "npm run build && npm run lh -- ${DEPLOY_PRIME_URL}"
